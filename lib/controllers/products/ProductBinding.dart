@@ -5,10 +5,10 @@ import 'package:get/get.dart';
 
 class ProductBinding implements Bindings {
   @override
-  void dependencies() {  
+  void dependencies() {
     Get.lazyPut<ProductRepository>(() => ProductRepository(Get.find()));
     Get.lazyPut<ProductProvider>(() => ProductProvider(Get.find()));
-    
+
     Get.lazyPut<ProductController>(() => ProductController(Get.find()));
   }
 }

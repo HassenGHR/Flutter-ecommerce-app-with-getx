@@ -1,0 +1,134 @@
+{
+    "settings": {
+      "title": "الإعدادات",
+      "account": {
+        "header": "الحساب",
+        "guest": "زائر",
+        "notProvided": "غير متوفر",
+        "loginRegister": "تسجيل الدخول / التسجيل"
+      },
+      "settings": {
+        "header": "الإعدادات",
+        "appearance": {
+          "title": "المظهر",
+          "modalTitle": "اختر النمط",
+          "light": "فاتح",
+          "dark": "داكن",
+          "system": "النظام"
+        },
+        "language": {
+          "title": "اللغة",
+          "modalTitle": "اختر اللغة",
+          "english": "الإنجليزية",
+          "french": "الفرنسية",
+          "arabic": "العربية"
+        },
+        "notifications": "الإشعارات",
+        "bookmarks": "المفضلة",
+        "help": "المساعدة",
+        "logout": "تسجيل الخروج"
+      },
+      "version": "الإصدار 1.0.0"
+    },
+    "explore_tab":{
+      "no_offers_available": "لا توجد عروض متاحة",
+      "top_categories": "الفئات الرئيسية",
+      "products": "المنتجات",
+      "add_to_cart": "إضافة إلى السلة",
+      "available": "متوفر",
+      "out_of_stock": "غير متوفر",
+      "no_products_yet": "عذرًا! لا توجد منتجات بعد",
+      "no_products_message": "لم نتمكن من العثور على أي منتجات في هذه الفئة حاليًا.",
+      "currency": "دج",
+      "search":"ابحث عن منتج",
+     "categories": {
+    "clothing": "الملابس",
+    "electronics": "الإلكترونيات",
+    "kitchen": "المطبخ",
+    "wearables": "الإكسسوارات القابلة للارتداء",
+    "furniture": "الأثاث"
+}
+
+
+    },
+    "product_details": {
+      "add_to_cart": "إضافة إلى السلة",
+      "cart_updated": "تحديث السلة",
+      "added_to_cart": "تمت الإضافة إلى السلة",
+      "available": "متوفر",
+      "out_of_stock": "غير متوفر",
+      "quantity": "الكمية",
+      "description": "الوصف",
+      "reviews": "التقييمات",
+      "no_reviews": "لا توجد تقييمات",
+      "no_reviews_message": "لا توجد تقييمات حتى الآن. كن أول من يقيم هذا المنتج.",
+      "currency": "دج"
+    },
+    "cart":{
+      "shopping_cart": "سلة التسوق",
+      "cart_empty": "سلتك فارغة",
+      "cart_empty_msg": "يبدو أنك لم تضف أي عناصر بعد",
+      "total": "المبلغ الإجمالي",
+      "items": "العناصر",
+      "profile_incomplete": "الملف الشخصي غير مكتمل",
+      "profile_incomplete_msg": "يرجى إكمال ملفك الشخصي قبل تقديم الطلب",
+      "complete_profile": "أكمل الملف الشخصي",
+      "order_success": "تم الطلب بنجاح",
+      "order_success_msg": "تم تقديم طلبك بنجاح",
+      "view_orders": "عرض الطلبات",
+      "close": "إغلاق",
+      "order_failed": "فشل الطلب",
+      "order_failed_msg": "تعذر إرسال طلبك. يرجى المحاولة مرة أخرى.",
+      "error": "خطأ",
+      "error_msg": "حدث خطأ غير متوقع:",
+      "confirm_order": "تأكيد الطلب"
+    },
+    "bookmarks":{
+      "bookmarks":"المفضلة",
+      "no_bookmarks": "لا توجد منتجات مفضلة",
+      "no_bookmarks_message": "ابدأ بإضافة العناصر المفضلة إلى قائمتك."    },
+      "auth": {
+        "create_account": "إنشاء حساب",
+        "create_account_message": "يرجى ملء النموذج للمتابعة",
+        "welcome": "مرحبًا",
+        "welcome_message": "مرحبًا بك في تطبيقنا",
+        "login": "تسجيل الدخول",
+        "register": "تسجيل حساب جديد",
+        "full_name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "confirm_password": "تأكيد كلمة المرور",
+        "forgot_password": "هل نسيت كلمة المرور؟",
+        "no_account": "ليس لديك حساب؟",
+        "already_account": "هل لديك حساب بالفعل؟",
+        "or_sign_in_with": "أو قم بتسجيل الدخول باستخدام",
+        "or_sign_up_with": "أو قم بالتسجيل باستخدام",
+        "or": "أو قم بالتسجيل باستخدام",
+        "sign_up_with_google": "سجل باستخدام Google",
+        "sign_in_with_google": "تسجيل الدخول باستخدام Google",
+        "valid_email": "يرجى إدخال بريدك الإلكتروني",
+        "valid_email_entered": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "valid_password": "يرجى إدخال كلمة المرور",
+        "valid_password_entered": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+        "valid_name": "يرجى إدخال اسمك الكامل",
+        "valid_confirm_password": "كلمات المرور غير متطابقة"
+    },
+    "profile":{
+      "profile":"الملف الشخصي",
+      "full_name": "الاسم الكامل",
+      "phone": "الهاتف",
+      "address": "العنوان",
+      "saving":"حفظ...",
+      "save":"حفظ",
+      "choose_image":"اختر صورة للملف الشخصي",
+      "camera":"الكاميرا",
+      "gallery":"المعرض"
+  
+    },
+    "orders": {
+    "order_history": "الطلبات السابقة",
+    "no_orders_yet": "لا توجد طلبات حتى الآن",
+    "start_shopping": "ابدأ التسوق واطلب طلبك الأول!",
+    "total": "الإجمالي"
+  }
+  }

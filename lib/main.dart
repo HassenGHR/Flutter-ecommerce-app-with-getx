@@ -1,5 +1,11 @@
+import 'dart:ui' as ui;
+import 'package:day59/controllers/bookmark/BookMarkController.dart';
+import 'package:day59/controllers/language/LanguageController.dart';
 import 'package:day59/controllers/theme/ThemesController.dart';
-import 'package:day59/themes/Themes.dart';
+import 'package:day59/firebase_options.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:day59/AppBinding.dart';
@@ -7,41 +13,69 @@ import 'package:day59/routes/routes.dart';
 import 'package:get_storage/get_storage.dart';
 
 void main() async {
+  // Initialize GetStorage for persistent storage
   await GetStorage.init();
 
-  runApp(App());
+  // Ensure bindings are initialized before runApp
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+
+  Get.put(ThemesController(), permanent: true);
+  Get.put(LanguageController(), permanent: true);
+
+  runApp(
+    EasyLocalization(
+      supportedLocales: const [
+        Locale('en'),
+        Locale('fr'),
+        Locale('ar'),
+      ],
+      path: 'assets/lang', // Make sure this matches your translations directory
+      fallbackLocale: const Locale('en'),
+      child: Phoenix(child: const App()),
+    ),
+  );
 }
+
 class App extends StatelessWidget {
-  final ThemesController themeController = Get.put(ThemesController());
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter e-commerce app',
-      theme: Themes.lightTheme,
-      darkTheme: Themes.darkTheme,
-      themeMode: getThemeMode(themeController.theme),
-      getPages: Routes.routes,
-      initialRoute: Routes.INITIAL,
-      initialBinding: AppBinding(),
+    final ThemesController themeController = Get.find();
+    final LanguageController languageController = Get.find();
+
+    return Directionality(
+      textDirection: languageController.isRTL()
+          ? ui.TextDirection.rtl
+          : ui.TextDirection.ltr,
+      child: GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter e-commerce app',
+        theme: ThemesController().lightTheme,
+        darkTheme: ThemesController().darkTheme,
+        themeMode: _getThemeMode(themeController.theme.value),
+
+        // EasyLocalization configuration
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
+
+        getPages: Routes.routes,
+        initialRoute: '/splash',
+        initialBinding: AppBinding(),
+      ),
     );
   }
 
-  ThemeMode getThemeMode(String type) {
-    ThemeMode themeMode = ThemeMode.system;
+  ThemeMode _getThemeMode(String type) {
     switch (type) {
-      case "system":
-        themeMode = ThemeMode.system;
-        break;
       case "dark":
-        themeMode = ThemeMode.dark;
-        break;
+        return ThemeMode.dark;
+      case "system":
+        return ThemeMode.system;
       default:
-        themeMode = ThemeMode.light;
-        break;
+        return ThemeMode.light;
     }
-
-    return themeMode;
   }
 }

@@ -1,204 +1,147 @@
-import 'package:day59/shared/constants/ColorConstants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Themes {
-  static ThemeData lightTheme = ThemeData(
-    primarySwatch: Colors.blue,
-    brightness: Brightness.light,
-    appBarTheme: AppBarTheme(
-      titleTextStyle: TextStyle(
-        color: Colors.black,
-        fontWeight: FontWeight.w600
-      ),
-      iconTheme: IconThemeData(
-        color: Colors.black
-      ),
-      backgroundColor: Colors.grey.shade50,
-      elevation: 0
-    ),
-    inputDecorationTheme: InputDecorationTheme(
-      border: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(10)
-      ),
-      hintStyle: TextStyle(
-        fontSize: 14,
-      )
-    ),
-    progressIndicatorTheme: ProgressIndicatorThemeData(
-      color: Colors.red
-    ),
-    textTheme: TextTheme(
-      headline1: TextStyle(
-        letterSpacing: -1.5,
-        fontSize: 48,
-        color: Colors.black,
-        fontWeight: FontWeight.bold
-      ),
-      headline2: TextStyle(
-        letterSpacing: -1.0,
-        fontSize: 40,
-        color: Colors.black,
-        fontWeight: FontWeight.bold
-      ),
-      headline3: TextStyle(
-        letterSpacing: -1.0,
-        fontSize: 32,
-        color: Colors.black,
-        fontWeight: FontWeight.bold
-      ),
-      headline4: TextStyle(
-        letterSpacing: -1.0,
-        color: Colors.black,
-        fontSize: 28,
-        fontWeight: FontWeight.w600
-      ),
-      headline5: TextStyle(
-        letterSpacing: -1.0,
-        color: Colors.black,
-        fontSize: 24,
-        fontWeight: FontWeight.w500
-      ),
-      headline6: TextStyle(
-        color: Colors.black,
-        fontSize: 18,
-        fontWeight: FontWeight.w500
-      ),
-      subtitle1: TextStyle(
-        color: Colors.black,
-        fontSize: 16,
-        fontWeight: FontWeight.w500
-      ),
-      subtitle2: TextStyle(
-        color: Colors.black,
-        fontSize: 14,
-        fontWeight: FontWeight.w500
-      ),
-      bodyText1: TextStyle(
-        color: Colors.grey.shade700,
-        fontSize: 16,
-        fontWeight: FontWeight.w400
-      ),
-      bodyText2: TextStyle(
-        color: Colors.grey.shade600,
-        fontSize: 14,
-        fontWeight: FontWeight.w400
-      ),
-      button: TextStyle(
-        color: Colors.white,
-        fontSize: 14,
-        fontWeight: FontWeight.w600
-      ),
-      caption: TextStyle(
-        color: Colors.grey.shade800,
-        fontSize: 12,
-        fontWeight: FontWeight.w400
-      ),
-      overline: TextStyle(
-        color: Colors.grey.shade700,
-        fontSize: 10,
-        fontWeight: FontWeight.w400,
-        letterSpacing: -0.5
-      )
-    )
-  );
+  // Dynamic Color Palette
+  static const Color primaryLight = Color(0xFF2196F3);
+  static const Color primaryDark = Color(0xFF1E88E5);
+  static const Color accentLight = Color(0xFF00BFA5);
+  static const Color accentDark = Color(0xFF00897B);
+  static const Color errorColor = Color(0xFFE53935);
+  static const Color warningColor = Color(0xFFFFA000);
+  static const Color successColor = Color(0xFF43A047);
 
-  static ThemeData darkTheme = ThemeData(
-    primaryColor: Colors.blue,
-    primarySwatch: Colors.blue,
-    brightness: Brightness.dark,
-    scaffoldBackgroundColor: ColorConstants.gray900,
-    appBarTheme: AppBarTheme(
-      backgroundColor: ColorConstants.gray900,
-      elevation: 0,
-      iconTheme: IconThemeData(
-        color: Colors.white
+  // Dynamic Text Theme Builder
+  static TextTheme _buildTextTheme(TextTheme base, {double scaleFactor = 1.0}) {
+    return base.copyWith(
+      displayLarge: GoogleFonts.poppins(
+        textStyle: base.displayLarge!.copyWith(
+          fontSize: 57 * scaleFactor,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.25,
+          height: 1.12,
+        ),
       ),
-    ),
-    bottomAppBarColor: ColorConstants.gray800,
-    inputDecorationTheme: InputDecorationTheme(
-      border: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(10)
+      headlineMedium: GoogleFonts.poppins(
+        textStyle: base.headlineMedium!.copyWith(
+          fontSize: 28 * scaleFactor,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 0,
+          height: 1.29,
+        ),
       ),
-      hintStyle: TextStyle(
-        fontSize: 14,
-      )
-    ),
-    progressIndicatorTheme: ProgressIndicatorThemeData(
-      color: Colors.white
-    ),
-    textTheme: TextTheme(
-      headline1: TextStyle(
-        letterSpacing: -1.5,
-        fontSize: 48,
-        color: Colors.grey.shade50,
-        fontWeight: FontWeight.bold
+      bodyLarge: GoogleFonts.inter(
+        textStyle: base.bodyLarge!.copyWith(
+          fontSize: 16 * scaleFactor,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0.5,
+          height: 1.5,
+        ),
       ),
-      headline2: TextStyle(
-        letterSpacing: -1.0,
-        fontSize: 40,
-        color: Colors.grey.shade50,
-        fontWeight: FontWeight.bold
+      bodySmall: GoogleFonts.inter(
+        textStyle: base.bodySmall!.copyWith(
+          fontSize: 12 * scaleFactor,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 0.4,
+          height: 1.33,
+        ),
       ),
-      headline3: TextStyle(
-        letterSpacing: -1.0,
-        fontSize: 32,
-        color: Colors.grey.shade50,
-        fontWeight: FontWeight.bold
+    );
+  }
+
+  // Light Theme
+  static ThemeData lightTheme({double textScaleFactor = 1.0}) {
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.light(
+        primary: primaryLight,
+        secondary: accentLight,
+        error: errorColor,
+        background: Colors.grey.shade50,
+        surface: Colors.white,
+        onPrimary: Colors.white,
+        onSecondary: Colors.white,
+        onError: Colors.white,
+        onBackground: Colors.black87,
+        onSurface: Colors.black87,
       ),
-      headline4: TextStyle(
-        letterSpacing: -1.0,
-        color: Colors.grey.shade50,
-        fontSize: 28,
-        fontWeight: FontWeight.w600
+      appBarTheme: AppBarTheme(
+        centerTitle: true,
+        titleTextStyle: GoogleFonts.poppins(
+          textStyle: TextStyle(
+            color: Colors.black87,
+            fontWeight: FontWeight.w600,
+            fontSize: 20 * textScaleFactor,
+            letterSpacing: 0.15,
+          ),
+        ),
+        iconTheme: const IconThemeData(color: Colors.black87, size: 24),
+        backgroundColor: Colors.grey.shade50,
+        elevation: 0,
       ),
-      headline5: TextStyle(
-        letterSpacing: -1.0,
-        color: Colors.grey.shade50,
-        fontSize: 24,
-        fontWeight: FontWeight.w500
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: Colors.grey.shade100,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(color: primaryLight, width: 2),
+        ),
       ),
-      headline6: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 18,
-        fontWeight: FontWeight.w500
+    ).copyWith(
+      textTheme: _buildTextTheme(ThemeData.light().textTheme,
+          scaleFactor: textScaleFactor),
+    );
+  }
+
+  // Dark Theme
+  static ThemeData darkTheme({double textScaleFactor = 1.0}) {
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.dark(
+        primary: primaryDark,
+        secondary: accentDark,
+        error: errorColor,
+        background: const Color(0xFF121212),
+        surface: const Color(0xFF1E1E1E),
+        onPrimary: Colors.white,
+        onSecondary: Colors.white,
+        onError: Colors.white,
+        onBackground: Colors.white,
+        onSurface: Colors.white,
       ),
-      subtitle1: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 16,
-        fontWeight: FontWeight.w500
+      appBarTheme: AppBarTheme(
+        centerTitle: true,
+        titleTextStyle: GoogleFonts.poppins(
+          textStyle: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w600,
+            fontSize: 20 * textScaleFactor,
+            letterSpacing: 0.15,
+          ),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white, size: 24),
+        backgroundColor: const Color(0xFF121212),
+        elevation: 0,
       ),
-      subtitle2: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 14,
-        fontWeight: FontWeight.w500
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: const Color(0xFF2C2C2C),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(color: primaryDark, width: 2),
+        ),
       ),
-      bodyText1: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 16,
-        fontWeight: FontWeight.w400
-      ),
-      bodyText2: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 14,
-        fontWeight: FontWeight.w400
-      ),
-      button: TextStyle(
-        color: Colors.white,
-        fontSize: 14,
-        fontWeight: FontWeight.w600
-      ),
-      caption: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 12,
-        fontWeight: FontWeight.w500
-      ),
-      overline: TextStyle(
-        color: Colors.grey.shade50,
-        fontSize: 10,
-        fontWeight: FontWeight.w400
-      )
-    ),
-  );
+    ).copyWith(
+      textTheme: _buildTextTheme(ThemeData.dark().textTheme,
+          scaleFactor: textScaleFactor),
+    );
+  }
 }

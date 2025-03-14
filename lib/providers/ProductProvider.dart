@@ -6,15 +6,15 @@ class ProductProvider {
 
   ProductProvider(this._productRepository);
 
-  Future<List<ProductModel>> getDiscountedProducts() async {
-    var products = await _productRepository.getDiscountedProducts();
+  Future<List<ProductModel>> fetchProducts() async {
+    try {
+      var products = await _productRepository.getDiscountedProducts();
 
-    return products.map((product) => ProductModel.fromJson(product)).toList();
-  }
-
-  Future<ProductModel> getProductById(int id) async {
-    var product = await _productRepository.getProductId(id);
-
-    return ProductModel.fromJson(product);
+      // Ensure proper type conversion
+      return products;
+    } catch (e) {
+      print("Error fetching products: $e");
+      return []; // Return an empty list in case of an error
+    }
   }
 }

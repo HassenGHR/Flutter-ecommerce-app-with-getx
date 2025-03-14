@@ -1,20 +1,47 @@
 import 'package:day59/shared/typedef.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'OfferModel.freezed.dart';
-part 'OfferModel.g.dart';
+class OfferModel {
+  final int id;
+  final String title;
+  final String description;
+  final String image;
+  final String price;
+  final String discount;
+  final String discountPrice;
 
-@freezed
-class OfferModel with _$OfferModel {
-  factory OfferModel({
-    required int id,
-    required String title,
-    required String description,
-    required String image,
-    required String price,
-    required String discount,
-    required String discountPrice,
-  }) = _OfferModel;
+  OfferModel({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.image,
+    required this.price,
+    required this.discount,
+    required this.discountPrice,
+  });
 
-  factory OfferModel.fromJson(JSON json) => _$OfferModelFromJson(json);
+  // Factory constructor to create an instance from JSON
+  factory OfferModel.fromJson(JSON json) {
+    return OfferModel(
+      id: json['id'] as int,
+      title: json['title'] as String,
+      description: json['description'] as String,
+      image: json['image'] as String,
+      price: json['price'] as String,
+      discount: json['discount'] as String,
+      discountPrice: json['discountPrice'] as String,
+    );
+  }
+
+  // Method to convert an instance to JSON
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'image': image,
+      'price': price,
+      'discount': discount,
+      'discountPrice': discountPrice,
+    };
+  }
 }

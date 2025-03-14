@@ -1,0 +1,311 @@
+{
+  "project_info": {
+    "project_number": "523498327497",
+    "firebase_url": "https://hysicdriver-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "hysicdriver",
+    "storage_bucket": "hysicdriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:7c5a05467f77382f066c18",
+        "android_client_info": {
+          "package_name": "com.example.bos_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-qg0mufptfb1b9r5p642g4k2oc7qllvju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bos_app",
+            "certificate_hash": "579d67205c76f99a5fffe8800dfd5093f19b013c"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:45b7089b4712cb0c066c18",
+        "android_client_info": {
+          "package_name": "com.example.client_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:1dc1ee05d54fe8da066c18",
+        "android_client_info": {
+          "package_name": "com.example.day59"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-6fa66sc8ud4i8nhv8oor4amhq32pnv6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.day59",
+            "certificate_hash": "579d67205c76f99a5fffe8800dfd5093f19b013c"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:1dcd0ebe6d264fe6066c18",
+        "android_client_info": {
+          "package_name": "com.example.hysic_delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-rod95amdp0hiqrfa7lcae11ufvb948g7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hysic_delivery",
+            "certificate_hash": "579d67205c76f99a5fffe8800dfd5093f19b013c"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:654b3ca71ddacf5e066c18",
+        "android_client_info": {
+          "package_name": "com.example.hysic_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-bvvhu3b09lh2ujjorjv1sko5rpokb4hp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hysic_driver",
+            "certificate_hash": "579d67205c76f99a5fffe8800dfd5093f19b013c"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:da4c962f03f3d00d066c18",
+        "android_client_info": {
+          "package_name": "com.example.oasis_delivery_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-h3o7mhcc6hefg8vcsfrn0ejgf0cmq7fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oasis_delivery_admin",
+            "certificate_hash": "c06936969f27772ed1dcfa93665d4b45d76b1b10"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523498327497:android:662346efd02f67c2066c18",
+        "android_client_info": {
+          "package_name": "com.example.oassis_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523498327497-gcror7v6ph4t9852jul8031tiahbd9hc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oassis_food",
+            "certificate_hash": "c06936969f27772ed1dcfa93665d4b45d76b1b10"
+          }
+        },
+        {
+          "client_id": "523498327497-9dcf5smbqp529j99vois0k0gjsfm71rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpnL6fJ1omQNprHtXs5Iu9TS6y_WYy8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101774307234914849492",
+              "client_type": 3
+            },
+            {
+              "client_id": "523498327497-91mhi6u20u3dknrmagb8u7ahvlosfunm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hysicDriver.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

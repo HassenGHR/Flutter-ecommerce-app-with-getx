@@ -1,0 +1,142 @@
+{
+  "settings": {
+    "title": "Settings",
+    "account": {
+      "header": "Account",
+      "guest": "Guest",
+      "notProvided": "Not Provided",
+      "loginRegister": "Login / Register"
+    },
+    "settings": {
+      "header": "Settings",
+      "appearance": {
+        "title": "Appearance",
+        "modalTitle": "Select a Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "language": {
+        "title": "Language",
+        "modalTitle": "Select Language",
+        "english": "English",
+        "french": "French",
+        "arabic": "Arabic"
+      },
+      "notifications": "Notifications",
+      "bookmarks": "Bookmarks",
+      "help": "Help",
+      "logout": "Logout"
+    },
+    "version": "Version 1.0.0"
+  },
+  "explore_tab":{
+    "no_offers_available": "No offers available",
+    "top_categories": "Categories",
+    "products": "Products",
+    "add_to_cart": "Add to Cart",
+    "available": "Available",
+    "out_of_stock": "Out of Stock",
+    "no_products_yet": "Oops! No Products Yet",
+    "no_products_message": "We couldn't find any products in this category right now.",
+    "currency": "Da",
+    "search":"Search product",
+    "categories": {
+
+    "clothing": "Clothing",
+    "electronics": "Electronics",
+    "kitchen": "Kitchen",
+    "wearables": "Wearables",
+    "furniture": "Furniture"
+  }
+
+  },
+  "product_details": {
+    "add_to_cart": "Add to Cart",
+    "cart_updated": "Cart Updated",
+    "added_to_cart": "Added to Cart",
+    "available": "Available",
+    "out_of_stock": "Out of Stock",
+    "quantity": "Quantity",
+    "description": "Description",
+    "reviews": "Reviews",
+    "no_reviews": "No Reviews",
+    "no_reviews_message": "No reviews yet. Be the first to review this product.",
+    "currency": "Da"
+  },
+  "cart":{
+    "shopping_cart": "Shopping Cart",
+    "cart_empty": "Your cart is empty",
+    "cart_empty_msg":"Looks like you haven\\'t added any items yet",
+    "total": "Total",
+    "items": "Items",
+    "profile_incomplete":"Profile Incomplete",
+    "profile_incomplete_msg":"Please complete your profile before placing an order",
+    "complete_profile":"Complete Profile",
+    "order_success":"Order Successful",
+    "order_success_msg":"Your order has been placed successfully",
+    "view_orders":"View Orders",
+    "close":"Close",
+    "order_failed":"Order Failed",
+    "order_failed_msg":"Unable to submit your order. Please try again.",
+    "error":"Error",
+    "error_msg":"An unexpected error occurred:",
+    "confirm_order":"Confirm Order"
+  },
+  "bookmarks": {
+    "bookmarks":"Bookmarks",
+    "no_bookmarks": "No bookmarked products",
+    "no_bookmarks_message": "Start bookmarking your favorite items."
+  
+  },
+  "auth":{
+    "create_account": "Create Account",
+    "create_account_message": "Please fill in the form to continue",
+    "welcome": "Welcome Back",
+    "welcome_message": "Please sign in to continue",
+    "login": "Sign In",
+    "register": "Sign Up",
+    "full_name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot Password?",
+    "no_account": "Don't have an account?",
+    "or":"Or continue with",  
+    "already_account": "Already have an account?",
+    "or_sign_in_with": "Or sign in with",
+    "or_sign_up_with": "Or sign up with",
+    "sign_up_with_google": "Sign up with Google",
+    "sign_in_with_google": "Sign in with Google",
+    "valid_email": "'Please enter your email",
+    "valid_email_entered": "Please enter a valid email address",
+    "valid_password": "Please enter your password",
+    "valid_password_entered": "Password must be at least 6 characters",
+    "valid_name": "Please enter your full name",
+    "valid_confirm_password": "Passwords do not match"
+
+
+    
+  },
+  "profile":{
+    "profile":"Profile",
+    "full_name": "Full Name",
+    "phone": "Phone",
+    "address": "Address",
+    "saving":"Saving...",
+    "save":"Save",
+    "choose_image":"Choose an Image",
+    "camera":"Camera",
+    "gallery":"Gallery"
+
+  },
+ "orders": {
+    "order_history": "Order History",
+    "no_orders_yet": "No orders yet",
+    "start_shopping": "Start shopping and place your first order!",
+    "total": "Total"
+  }
+    
+
+  
+}

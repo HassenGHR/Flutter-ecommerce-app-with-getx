@@ -1,0 +1,135 @@
+{
+    "settings": {
+      "title": "Paramètres",
+      "account": {
+        "header": "Compte",
+        "guest": "Invité",
+        "notProvided": "Non fourni",
+        "loginRegister": "Connexion / Inscription"
+      },
+      "settings": {
+        "header": "Paramètres",
+        "appearance": {
+          "title": "Apparence",
+          "modalTitle": "Sélectionner un thème",
+          "light": "Clair",
+          "dark": "Sombre",
+          "system": "Système"
+        },
+        "language": {
+          "title": "Langue",
+          "modalTitle": "Sélectionner la langue",
+          "english": "Anglais",
+          "french": "Français",
+          "arabic": "Arabe"
+        },
+        "notifications": "Notifications",
+        "bookmarks": "Favoris",
+        "help": "Aide",
+        "logout": "Déconnexion"
+      },
+      "version": "Version 1.0.0"
+    },
+    "explore_tab":
+    {
+      "no_offers_available": "Aucune offre disponible",
+      "top_categories": "Catégories",
+      "products": "Produits",
+      "add_to_cart": "Ajouter au panier",
+      "available": "Disponible",
+      "out_of_stock": "En rupture de stock",
+      "no_products_yet": "Oups ! Aucun produit pour le moment",
+      "no_products_message": "Nous n'avons trouvé aucun produit dans cette catégorie pour le moment.",
+      "currency": "Da",
+      "search":"Rechercher un produit",
+      "categories": {
+    "clothing": "Vêtements",
+    "electronics": "Électronique",
+    "kitchen": "Cuisine",
+    "wearables": "Accessoires portables",
+    "furniture": "Meubles"
+}
+
+    },"product_details": {
+      "add_to_cart": "Ajouter au panier",
+      "cart_updated": "Panier mis à jour",
+      "added_to_cart": "Ajouté au panier",
+      "available": "Disponible",
+      "out_of_stock": "En rupture de stock",
+      "quantity": "Quantité",
+      "description": "Description",
+      "reviews": "Avis",
+      "no_reviews": "Aucun avis",
+      "currency":"Da"
+    },
+    "cart":{
+      "shopping_cart": "Panier",
+      "cart_empty": "Votre panier est vide",
+      "cart_empty_msg": "On dirait que vous n'avez ajouté aucun article pour l'instant",
+      "total": "Total",
+      "items": "Articles",
+      "profile_incomplete": "Profil incomplet",
+      "profile_incomplete_msg": "Veuillez compléter votre profil avant de passer une commande",
+      "complete_profile": "Compléter le profil",
+      "order_success": "Commande réussie",
+      "order_success_msg": "Votre commande a été passée avec succès",
+      "view_orders": "Voir les commandes",
+      "close": "Fermer",
+      "order_failed": "Échec de la commande",
+      "order_failed_msg": "Impossible de soumettre votre commande. Veuillez réessayer.",
+      "error": "Erreur",
+      "error_msg": "Une erreur inattendue est survenue :",
+      "confirm_order": "Confirmer la commande"
+    },
+    "bookmarks":{
+      "bookmarks":"Favoris",
+      "no_bookmarks": "Aucun produit enregistré",
+      "no_bookmarks_message": "Commencez à enregistrer vos articles favoris."
+  
+    },
+    "auth": {
+      "create_account": "Créer un compte",
+      "create_account_message": "Veuillez remplir le formulaire pour continuer",
+      "welcome": "Bienvenue",
+      "welcome_message": "Connectez-vous pour continuer",
+      "login": "Se connecter",
+      "register": "S'inscrire",
+      "full_name": "Nom complet",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirm_password": "Confirmer le mot de passe",
+      "forgot_password": "Mot de passe oublié ?",
+      "no_account": "Vous n'avez pas de compte ?",
+      "already_account": "Vous avez déjà un compte ?",
+      "or_sign_in_with": "Ou connectez-vous avec",
+      "or_sign_up_with": "Ou inscrivez-vous avec",
+      "or": "Ou continuez avec",
+      "sign_up_with_google": "S'inscrire avec Google",
+      "sign_in_with_google": "Se connecter avec Google",
+      "valid_email": "Veuillez entrer votre email",
+      "valid_email_entered": "Veuillez entrer une adresse email valide",
+      "valid_password": "Veuillez entrer votre mot de passe",
+      "valid_password_entered": "Le mot de passe doit comporter au moins 6 caractères",
+      "valid_name": "Veuillez entrer votre nom complet",
+      "valid_confirm_password": "Les mots de passe ne correspondent pas"
+
+  },
+  "profile":{
+    "profile":"Profil",
+    "full_name": "Nom complet",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "saving":"Enregistrement...",
+    "save":"Enregistrer",
+    "choose_image":"Choisissez une image",
+    "camera":"Caméra",
+    "gallery":"Galerie"
+
+  },
+  "orders": {
+    "order_history": "Historique des commandes",
+    "no_orders_yet": "Aucune commande pour le moment",
+    "start_shopping": "Commencez vos achats et passez votre première commande !",
+    "total": "Total"
+  }
+  }

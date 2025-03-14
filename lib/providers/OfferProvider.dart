@@ -6,9 +6,9 @@ class OfferProvider {
 
   OfferProvider(this._offerRepository);
 
-  Future<List<OfferModel>> getOffers() async {
+  Future<List<String>> getOffers() async {
     var offers = await _offerRepository.getOffers();
 
-    return offers.map((offer) => OfferModel.fromJson(offer)).toList();
+    return offers;
   }
 }
