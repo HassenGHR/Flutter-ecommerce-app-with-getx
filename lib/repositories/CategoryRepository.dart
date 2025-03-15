@@ -17,31 +17,31 @@ class CategoryRepository {
         'id': 1,
         'name': 'Clothing', // Arabic name
         'translatedName': tr('categories.Clothing'), // Translated name
-        'image': "assets/images/gattaux.png",
+        'image': "assets/images/Clothing.jpg",
       },
       {
         'id': 2,
         'name': 'Electronics', // Arabic name
         'translatedName': tr('categories.Electronics'), // Translated name
-        'image': "assets/images/drinks.jpg",
+        'image': "assets/images/Electronics.jpg",
       },
       {
         'id': 3,
         'name': 'Furniture', // Arabic name
         'translatedName': tr('categories.Furniture'), // Translated name
-        'image': "assets/images/tea.jpg",
+        'image': "assets/images/Furniture.jpg",
       },
       {
         'id': 4,
         'name': 'Kitchen', // Arabic name
         'translatedName': tr('categories.Kitchen'), // Translated name
-        'image': "assets/images/nuts.jpg",
+        'image': "assets/images/Kitchen.jpg",
       },
       {
         'id': 5,
         'name': 'Wearables', // Arabic name
         'translatedName': tr('categories.Wearables'), // Translated name
-        'image': "assets/images/emballage.jpg",
+        'image': "assets/images/Wearables.jpg",
       },
     ];
 
